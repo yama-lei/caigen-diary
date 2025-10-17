@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-library-paper text-library-ink font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-nju-purple text-white rounded-lg hover:bg-nju-dark transition-colors duration-200 font-sans;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-library-wood text-white rounded-lg hover:bg-opacity-80 transition-colors duration-200 font-sans;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg p-6 border-2 border-library-wood/20 backdrop-blur;
+  }
+  
+  .diary-card {
+    @apply card hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .sentiment-positive {
+    @apply text-green-600 bg-green-50 px-2 py-1 rounded-full text-xs font-sans;
+  }
+  
+  .sentiment-negative {
+    @apply text-red-600 bg-red-50 px-2 py-1 rounded-full text-xs font-sans;
+  }
+  
+  .sentiment-neutral {
+    @apply text-gray-600 bg-gray-50 px-2 py-1 rounded-full text-xs font-sans;
+  }
+  
+  .page-title {
+    @apply text-4xl font-bold text-nju-purple mb-6 font-serif;
+  }
+  
+  .section-title {
+    @apply text-2xl font-semibold text-nju-dark mb-4 font-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6F42C1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A2C7C;
+}
+
+/* Paper texture background */
+.paper-bg {
+  background-color: #F5F1E8;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(139, 115, 85, 0.03) 2px,
+      rgba(139, 115, 85, 0.03) 4px
+    );
+}
+

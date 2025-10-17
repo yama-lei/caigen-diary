@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Database
+data/diaries.db
+data/diaries.db-journal
+
+# Generated JSON files
+data/json/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vite
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables (keep template, ignore actual)
+.env
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+
+# other
+dev-docs/
