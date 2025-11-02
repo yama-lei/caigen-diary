@@ -75,10 +75,13 @@
 
 情绪识别使用的是aliyun的模型（效果很一般，但是看在50w次免费调用的份上，我原谅它了）
 
-##TODOS
-1. 解决重复识别/错误识别问题
-2. 减少hunam in the loop
+## TODOS
+- []  解决重复识别/错误识别问题(只能做一些工程上的调优：prompt，缩短context以减少错误，etc)
+- []  减少hunam in the loop（目前还是需要我手动复制粘贴。。text->update目前已经是全自动了，现在我可以完全不需要登录服务器进行任何操作）
+- []  更加详尽的内容分析
+- []  合并其他的校园论坛信息（表白墙偶尔也能贡献几条不错的内容；以及我还想把已经成为历史的LilyBBS单独设一个板块（https://github.com/LadderOperator/LilyBBS_DATA?tab=readme-ov-file）
 
 
-
+## TimeLine
+- [x] 2025-10 Setup Caigen-diary
 

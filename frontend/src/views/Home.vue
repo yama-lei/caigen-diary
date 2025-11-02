@@ -41,7 +41,7 @@
           <!-- Entries List -->
           <div class="space-y-3">
             <div 
-              v-for="(entry, idx) in group" 
+              v-for="(entry, idx) in group.slice().reverse()" 
               :key="entry.id"
               class="py-3 border-b border-gray-200 last:border-0"
             >
