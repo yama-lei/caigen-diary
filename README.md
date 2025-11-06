@@ -49,7 +49,7 @@
 
 校内访问地址：[菜根日记存档 ](http://172.26.8.119:3000)
 校外访问地址：[菜根日记存档](http://115.175.12.31:10030)
-如果想要把菜根日记集成在其他的应用中（或者只需要后端），可以使用这个接口：[172.26.8.119:8005](http://172.26.8.119:8005/)
+如果想要把菜根日记集成在其他的应用中（或者只需要后端），可以使用这个端口：[172.26.8.119:8005](http://172.26.8.119:8005/)
 
 文档在[172.26.8.119:8005/docs](http://172.26.8.119:8005/)中，没有鉴权，应该不会有人滥用,~~因为应该没多少人关注这个~~
 
@@ -63,6 +63,12 @@
 
 ![image-20251017164122054](https://yamapicgo.oss-cn-nanjing.aliyuncs.com/picgoImage/image-20251017164122054.png)
 
+你知道游客来图书馆参观的感悟是什么吗？
+
+![image](https://yamapicgo.oss-cn-nanjing.aliyuncs.com/picgoImage/20251106210019.png)
+
+
+
 ## 开发架构
 
 前端vue+tailwindcss
@@ -75,13 +81,21 @@
 
 情绪识别使用的是aliyun的模型（效果很一般，但是看在50w次免费调用的份上，我原谅它了）
 
-## TODOS
-- []  解决重复识别/错误识别问题(只能做一些工程上的调优：prompt，缩短context以减少错误，etc)
-- []  减少hunam in the loop（目前还是需要我手动复制粘贴。。text->update目前已经是全自动了，现在我可以完全不需要登录服务器进行任何操作）
-- []  更加详尽的内容分析
-- []  合并其他的校园论坛信息（表白墙偶尔也能贡献几条不错的内容；以及我还想把已经成为历史的LilyBBS单独设一个板块（https://github.com/LadderOperator/LilyBBS_DATA?tab=readme-ov-file）
 
+## Challenges
+
+- [ ] 重复项。
+- [ ] Need hunam in the loop。
+
+
+## TODOS
+- [ ] 解决重复识别/错误识别问题(只能做一些工程上的调优：prompt，缩短context以减少错误，etc)
+- [ ] 减少hunam in the loop（目前还是需要我手动复制粘贴。。text->update目前已经是全自动了，现在我可以完全不需要登录服务器进行任何操作）
+- [ ] 更加详尽的内容分析
+- [ ] 合并其他的校园论坛信息（表白墙偶尔也能贡献几条不错的内容；以及我还想把已经成为历史的LilyBBS单独设一个板块（https://github.com/LadderOperator/LilyBBS_DATA?tab=readme-ov-file）
 
 ## TimeLine
-- [x] 2025-10 Setup Caigen-diary
+- [x] 2025-10 Setup Caigen-diary.
+- [x] 2025-11 Fix some bugs and setup an simple webhook to upload newest entries directly from the two compiuters in the libary.y
+
 
