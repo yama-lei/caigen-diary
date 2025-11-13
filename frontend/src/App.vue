@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen paper-bg">
+  <div class="min-h-screen flex flex-col paper-bg">
     <!-- Header -->
     <header class="bg-nju-purple text-white shadow-lg sticky top-0 z-50">
       <div class="container mx-auto px-4 py-4">
@@ -21,13 +21,16 @@
             <router-link to="/about" class="hover:text-nju-light transition-colors px-3 py-2 rounded" active-class="bg-nju-dark">
               关于
             </router-link>
+            <router-link to="/admin" class="hover:text-nju-light transition-colors px-3 py-2 rounded" active-class="bg-nju-dark">
+              管理
+            </router-link>
           </nav>
         </div>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8 flex-1">
       <router-view />
     </main>
 
@@ -51,4 +54,3 @@ header {
   backdrop-filter: blur(10px);
 }
 </style>
-

@@ -6,12 +6,14 @@ import Home from './views/Home.vue'
 import Search from './views/Search.vue'
 import Stats from './views/Stats.vue'
 import About from './views/About.vue'
+import Admin from './views/Admin.vue'
 
 const routes = [
   { path: '/', component: Home, name: 'home' },
   { path: '/search', component: Search, name: 'search' },
   { path: '/stats', component: Stats, name: 'stats' },
   { path: '/about', component: About, name: 'about' },
+  { path: '/admin', component: Admin, name: 'admin' },
 ]
 
 const router = createRouter({

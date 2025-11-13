@@ -14,18 +14,9 @@
 
     <!-- Diary Entries -->
     <div v-else>
-      <div class="mb-4 flex justify-between items-center">
+      <div class="mb-4">
         <div class="text-gray-600 font-sans">
           共 <span class="font-bold text-nju-purple">{{ totalCount }}</span> 条记录
-        </div>
-        <div class="flex items-center gap-2">
-          <input 
-            type="checkbox" 
-            id="showSentiment"
-            v-model="showSentimentInfo"
-            class="rounded text-nju-purple focus:ring-nju-purple"
-          >
-          <label for="showSentiment" class="text-sm text-gray-600 font-sans">显示情感分析</label>
         </div>
       </div>
 
@@ -48,12 +39,6 @@
               <p class="text-library-ink leading-relaxed text-base">
                 {{ entry.content }}
               </p>
-              <!-- Sentiment Info -->
-              <div v-if="showSentimentInfo && entry.positive_prob !== null" class="mt-2 text-xs font-sans text-gray-500">
-                😊 {{ (entry.positive_prob * 100).toFixed(1) }}% 
-                <span class="mx-1">·</span>
-                😔 {{ (entry.negative_prob * 100).toFixed(1) }}%
-              </div>
             </div>
           </div>
         </div>
@@ -90,7 +75,6 @@ const hasMore = ref(true)
 const currentOffset = ref(0)
 const pageSize = 100
 const totalCount = ref(0)
-const showSentimentInfo = ref(false)
 
 // Group entries by date
 const groupedEntries = computed(() => {
