@@ -1,3 +1,9 @@
+# 暂停维护
+直接原因：一个月前，之前的机器出了点故障，在重新刷机的时候，不慎将硬盘重新格式化了
+根本原因：懒得维护，原本的流程还是不够自动化；而且Vibe coding的toy project太多也没意思
+
+---
+
 # 菜根日记存档
 
 菜根日记是南大同学线下自发的日记活动，记录了来图书馆学习的同学们的思绪：吐槽，抱怨，鼓励……流露着真实的南大人的心声。
@@ -97,5 +103,6 @@
 ## TimeLine
 - [x] 2025-10 Setup Caigen-diary.
 - [x] 2025-11 Fix some bugs and setup an simple webhook to upload newest entries directly from the two compiuters in the libary.y
+
 
 
